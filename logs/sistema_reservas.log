@@ -1,0 +1,49 @@
+2026-11-25 22:03:24 | INFO     | sistema_reservas | Sistema de logging inicializado en C:\Users\Santi\Downloads\sistema-reservas-poo\logs\sistema_reservas.log
+2026-11-25 22:03:24 | INFO     | sistema_reservas.simulaciones | Inicio de simulación: 18 escenarios
+2026-11-25 22:03:24 | INFO     | sistema_reservas.reserva | Reserva RES-0001 creada: cliente=CLI-12345678 servicio=SAL-001 fecha=2026-11-27T22:03
+2026-11-25 22:03:24 | INFO     | sistema_reservas.reserva | Reserva RES-0001: PENDIENTE -> CONFIRMADA (total=S/ 360.00)
+2026-11-25 22:03:24 | INFO     | sistema_reservas.reserva | Reserva RES-0001: CONFIRMADA -> PROCESADA (pago aprobado)
+2026-11-25 22:03:24 | INFO     | sistema_reservas.simulaciones | Escenario 01 (válida) OK: total=S/ 360.00, estado=PROCESADA
+2026-11-25 22:03:24 | INFO     | sistema_reservas.simulaciones | Escenario 02 (inválida) OK: correo inválido rechazado: [SR-101] El correo electrónico no tiene un formato válido. ('ana.torres@correo')
+2026-11-25 22:03:24 | INFO     | sistema_reservas.reserva | Reserva RES-0002 creada: cliente=CLI-12345678 servicio=SAL-002 fecha=2026-11-26T22:03
+2026-11-25 22:03:24 | WARNING  | sistema_reservas.reserva | Falló la confirmación de RES-0002 por parámetros inválidos
+2026-11-25 22:03:24 | INFO     | sistema_reservas.simulaciones | Escenario 03 (inválida) OK: capacidad controlada ([SR-301] La sala 'Sala Pequeña' admite hasta 5 asistentes. (solicitados=9)); estado=PENDIENTE
+2026-11-25 22:03:24 | INFO     | sistema_reservas.reserva | Reserva RES-0003 creada: cliente=CLI-12345678 servicio=EQP-001 fecha=2026-11-27T22:03
+2026-11-25 22:03:24 | WARNING  | sistema_reservas.reserva | Falló la confirmación de RES-0003 por parámetros inválidos
+2026-11-25 22:03:24 | INFO     | sistema_reservas.simulaciones | Escenario 04 (inválida) OK: stock controlado ([SR-302] El equipo 'Proyector 4K' solo tiene 3 unidades disponibles. (solicitadas=5)); estado=PENDIENTE
+2026-11-25 22:03:24 | INFO     | sistema_reservas.reserva | Reserva RES-0004 creada: cliente=CLI-12345678 servicio=EQP-002 fecha=2026-11-28T22:03
+2026-11-25 22:03:24 | INFO     | sistema_reservas.reserva | Reserva RES-0004: PENDIENTE -> CONFIRMADA (total=S/ 513.00)
+2026-11-25 22:03:24 | INFO     | sistema_reservas.simulaciones | Escenario 05 (válida) OK: descuento por volumen aplicado, total=S/ 513.00
+2026-11-25 22:03:24 | INFO     | sistema_reservas.reserva | Reserva RES-0005 creada: cliente=CLI-12345678 servicio=ASE-001 fecha=2026-11-29T22:03
+2026-11-25 22:03:24 | INFO     | sistema_reservas.reserva | Reserva RES-0005: PENDIENTE -> CONFIRMADA (total=S/ 920.00)
+2026-11-25 22:03:24 | INFO     | sistema_reservas.simulaciones | Escenario 06 (válida) OK: recargo por sesión extensa aplicado, total=S/ 920.00
+2026-11-25 22:03:24 | INFO     | sistema_reservas.reserva | Reserva RES-0006 creada: cliente=CLI-12345678 servicio=ASE-002 fecha=2026-11-30T22:03
+2026-11-25 22:03:24 | WARNING  | sistema_reservas.reserva | Falló la confirmación de RES-0006 por parámetros inválidos
+2026-11-25 22:03:24 | INFO     | sistema_reservas.simulaciones | Escenario 07 (inválida) OK: asesoría sin certificación rechazada: [SR-300] La asesoría 'Asesoría financiera' exige un asesor certificado. (especialidad=Finanzas corporativas)
+2026-11-25 22:03:24 | INFO     | sistema_reservas.reserva | Reserva RES-0007 creada: cliente=CLI-12345678 servicio=SAL-003 fecha=2026-11-26T22:03
+2026-11-25 22:03:24 | INFO     | sistema_reservas.reserva | Reserva RES-0007: PENDIENTE -> CONFIRMADA (total=S/ 240.00)
+2026-11-25 22:03:24 | INFO     | sistema_reservas.reserva | Reserva RES-0007: CONFIRMADA -> PROCESADA (pago aprobado)
+2026-11-25 22:03:24 | INFO     | sistema_reservas.simulaciones | Escenario 08 (inválida) OK: cancelación de reserva procesada rechazada: [SR-201] No se puede cancelar una reserva en estado PROCESADA. (estados permitidos: PENDIENTE o CONFIRMADA)
+2026-11-25 22:03:24 | INFO     | sistema_reservas.reserva | Reserva RES-0008 creada: cliente=CLI-12345678 servicio=SAL-004 fecha=2026-11-27T22:03
+2026-11-25 22:03:24 | INFO     | sistema_reservas.reserva | Reserva RES-0008: PENDIENTE -> CANCELADA (motivo=Reserva duplicada por error del sistema)
+2026-11-25 22:03:24 | INFO     | sistema_reservas.simulaciones | Escenario 09 (inválida) OK: confirmación de reserva cancelada rechazada: [SR-201] No se puede confirmar una reserva en estado CANCELADA. (requerido=PENDIENTE)
+2026-11-25 22:03:24 | INFO     | sistema_reservas.reserva | Reserva RES-0009 creada: cliente=CLI-12345678 servicio=SAL-005 fecha=2026-11-26T22:03
+2026-11-25 22:03:24 | INFO     | sistema_reservas.simulaciones | Escenario 10 (inválida) OK: motivo inválido rechazado ([SR-103] El motivo de cancelación debe tener al menos 5 caracteres.); estado=PENDIENTE
+2026-11-25 22:03:24 | INFO     | sistema_reservas.reserva | Reserva RES-0010 creada: cliente=CLI-12345678 servicio=SAL-006 fecha=2026-11-28T22:03
+2026-11-25 22:03:24 | INFO     | sistema_reservas.reserva | Reserva RES-0010: PENDIENTE -> CONFIRMADA (total=S/ 180.00)
+2026-11-25 22:03:24 | INFO     | sistema_reservas.reserva | Reserva RES-0010: CONFIRMADA -> CANCELADA (motivo=Cambio de fecha solicitado por el cliente)
+2026-11-25 22:03:24 | INFO     | sistema_reservas.simulaciones | Escenario 11 (válida) OK: cancelación válida, estado=CANCELADA
+2026-11-25 22:03:24 | INFO     | sistema_reservas.reserva | Reserva RES-0011 creada: cliente=CLI-12345678 servicio=SAL-007 fecha=2026-12-05T22:03
+2026-11-25 22:03:24 | INFO     | sistema_reservas.reserva | Reserva RES-0011: PENDIENTE -> CONFIRMADA (total=S/ 9000.00)
+2026-11-25 22:03:24 | INFO     | sistema_reservas.simulaciones | Escenario 12 (inválida) OK: pago rechazado por límite ([SR-400] El total excede el límite de pago automático. (total=S/ 9000.00; límite=S/ 5000.00)); estado=CONFIRMADA
+2026-11-25 22:03:24 | INFO     | sistema_reservas.simulaciones | Escenario 13 (válida) OK: polimorfismo verificado, total=S/ 1310.00
+2026-11-25 22:03:24 | INFO     | sistema_reservas.simulaciones | Escenario 14 (inválida) OK: cadena: KeyError -> ReservaInvalidaError ([SR-103] No se puede registrar la reserva: faltan datos del cliente.)
+2026-11-25 22:03:24 | WARNING  | sistema_reservas.simulaciones | Escenario de limpieza controlado: [SR-103] Fallo simulado al enviar el reporte.
+2026-11-25 22:03:24 | INFO     | sistema_reservas.simulaciones | Escenario 15 (válida) OK: recurso temporal liberado en el bloque finally
+2026-11-25 22:03:24 | INFO     | sistema_reservas.simulaciones | Escenario 16 (válida) OK: datos normalizados: email=nuevo.correo@dominio.com, teléfono=+51999888777
+2026-11-25 22:03:24 | INFO     | sistema_reservas.simulaciones | Escenario 17 (inválida) OK: fecha pasada rechazada: [SR-103] La fecha de la reserva debe ser futura. (2026-11-24T22:03)
+2026-11-25 22:03:24 | WARNING  | sistema_reservas.servicio | Servicio SAL-010 desactivado
+2026-11-25 22:03:24 | INFO     | sistema_reservas.reserva | Reserva RES-0013 creada: cliente=CLI-12345678 servicio=SAL-010 fecha=2026-11-27T22:03
+2026-11-25 22:03:24 | WARNING  | sistema_reservas.reserva | Falló la confirmación de RES-0013 por parámetros inválidos
+2026-11-25 22:03:24 | INFO     | sistema_reservas.simulaciones | Escenario 18 (inválida) OK: servicio desactivado rechazado: [SR-300] El servicio 'Sala temporal' está desactivado. (SAL-010)
+2026-11-25 22:03:24 | INFO     | sistema_reservas.simulaciones | Fin de simulación: 18/18 escenarios correctos
