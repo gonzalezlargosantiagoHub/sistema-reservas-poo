@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sistema-reservas-poo"
+version = "1.0.0"
+description = "Sistema de reservas de salas, alquiler de equipos y asesorías especializadas con POO, excepciones personalizadas y trazabilidad por logs."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Santiago González", email = "gonzalezlargosantiago@gmail.com" }]
+keywords = ["poo", "python", "reservas", "calidad", "iso-9126", "iso-12207"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Education",
+]
+
+[tool.setuptools.packages.find]
+include = ["sistema_reservas*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]

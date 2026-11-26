@@ -1,0 +1,27 @@
+# Bytecode y cachés de Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Herramientas
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Sistema operativo e IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Logs rotados (se conserva el log principal como evidencia)
+logs/*.log.1
+logs/*.log.2
+logs/*.log.3
